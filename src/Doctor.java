@@ -1,0 +1,20 @@
+// This class stores doctor information
+public class Doctor {
+    private String doctorId;
+    private String name;
+    private String specialization;
+
+    public Doctor(String doctorId, String name, String specialization) {
+        this.doctorId = doctorId;
+        this.name = name;
+        this.specialization = specialization;
+    }
+
+    public String getDoctorId() { return doctorId; }
+    public String getName() { return name; }
+
+    @Override
+    public String toString() {
+        return doctorId + " - " + name + " (" + specialization + ")";
+    }
+}
